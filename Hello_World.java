@@ -7,5 +7,7 @@ public class Hello_World {
 //Task 1: Print out "Hello World"
 		System.out.print("Hello World!");
 		//TASK 2: Print out "Hello World" and then print it again on the next line
-		
+		System.out.print("Hello World!");
 	}
+	
+}
