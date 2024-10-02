@@ -12,7 +12,7 @@ public String makeTags(String tag, String word) {
 
 
 public String firstHalf(String str) {
-int len = str.length();
-String half = new String (str.substring(0,len/2));
+int leng = str.length();
+String half = new String (str.substring(0,leng/2));
 return half;
 }
