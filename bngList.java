@@ -4,7 +4,7 @@ public class arrayLt {
 	//1.Create a method checkFor4() that is passed an ArrayList and returns the index of the first 4 if that array has a 4 and -1 if that array has no 4's. 
 	public static int checkFor4(ArrayList<Integer> arr) {
 	for(int i=0;i<arr.size();i++) {
-		if(arr.get(i)==4) {
+		if(arr.get(i) == 4) {
 			return i;
 		}
 	}
@@ -34,10 +34,10 @@ public class arrayLt {
 	
 		 public static void main(String[] args) {
 			 ArrayList<Integer>arr = new ArrayList<>();
-			 arr.add(4);
+			 arr.add(1);
 			 arr.add(5);
-			 arr.add(4);
-			 arr.add(6);
+			 arr.add(3);
+			 arr.add(5);
 			 arr.add(9);
 			 arr.add(7);
 			 System.out.println(checkFor4(arr));
@@ -48,6 +48,7 @@ public class arrayLt {
 		 list.add(5);
 		 list.add(1);
 		 list.add(5);
+		 ridAll5(list);
 		 System.out.println(list);
 		 ArrayList<Integer>nums = new ArrayList<>();
 		 list.add(5); 
@@ -55,7 +56,7 @@ public class arrayLt {
 		 list.add(3);
 		 list.add(1);
 		 list.add(9);
-		 System.out.println(nums);
+		 System.out.println(bubbleSort(nums));
 		 }
 		 
 		 }
