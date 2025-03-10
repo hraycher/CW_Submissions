@@ -101,13 +101,16 @@ public class Algorithms {
    }
 	   //10.Use either selection sort or insertion sort to sort an array.
 	   public static void numberSort(int[] arr) {
+		    // Loop through the array to find the smallest number in the unsorted part
 		   for (int i=0; i<arr.length-1;i++) {
-			   int temp = i;
+			   int temp = i;// Assume the current number is the smallest
+			    // Find the smallest element in the unsorted part of the array
 			   for (int j = i+1; j< arr.length;j++) {
 				   if(arr[j]<arr[temp]) {
-					   temp = j;
+					   temp = j; // Update minIndex if a smaller number is found
 				   }
 			   }
+			     // Swap the smallest element found with the current element
 			   int tempTwo = arr[temp];
 			   arr[temp] = arr[i];
 			   arr[i] = tempTwo;
