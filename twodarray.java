@@ -93,7 +93,7 @@ public class twoDarray {
 	        printColumnMajorOrder(arr);
 	    }
 
-	    // Method to print a 2D array
+	    // print a 2D array
 	    public static void print2DArray(int[][] array) {
 	        for (int i = 0; i < array.length; i++) {
 	            for (int j = 0; j < array[i].length; j++) {
@@ -103,7 +103,7 @@ public class twoDarray {
 	        }
 	    }
 
-	    // Method to print each element in the first row
+	    // print each element in the first row
 	    public static void printFirstRow(int[][] array) {
 	        for (int j = 0; j < array[0].length; j++) {
 	            System.out.print(array[0][j] + " ");
@@ -111,14 +111,14 @@ public class twoDarray {
 	        System.out.println();
 	    }
 
-	    // Method to print each element in the first column
+	    // print each element in the first column
 	    public static void printFirstColumn(int[][] array) {
 	        for (int i = 0; i < array.length; i++) {
 	            System.out.println(array[i][0]);
 	        }
 	    }
 
-	    // Method to print elements in row-major order
+	    // print elements in row order
 	    public static void printRowMajorOrder(int[][] array) {
 	        for (int i = 0; i < array.length; i++) {
 	            for (int j = 0; j < array[i].length; j++) {
@@ -128,7 +128,7 @@ public class twoDarray {
 	        }
 	    }
 
-	    // Method to print elements in column-major order
+	    // print elements in column order
 	    public static void printColumnMajorOrder(int[][] array) {
 	        for (int j = 0; j < array[0].length; j++) {
 	            for (int i = 0; i < array.length; i++) {
