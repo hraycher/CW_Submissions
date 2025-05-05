@@ -60,7 +60,7 @@ public static void startPlaying() {
 	   // basically these are what the players are going to use
        char[] players = {'X', 'O'};
        int whosTurn = 0; // basically the turns and keeps track of it
-       Scanner input = new Scanner(System.in); //user input
+       Scanner array = new Scanner(System.in); //user input
         boolean gameOver = false; // keep the game running
      // game loop continues until someone wins or it's a tie
         while (!gameOver) {
@@ -71,12 +71,12 @@ public static void startPlaying() {
              while (!validMove) {
             	 System.out.println("Go Player " + players[whosTurn]);
                  System.out.print("Row? (0-2): ");
-                 r = input.nextInt(); // gets the  row number
+                 r = array.nextInt(); // gets the  row number
                  System.out.print("Col? (0-2): ");
-                 c = input.nextInt(); //gets the column number
+                 c = array.nextInt(); //gets the column number
                //checks if its actually a spot
                  if (r >= 0 && r < 3 && c >= 0 && c < 3) {
-                     validMove = true; // move is valid
+                     validMove = true; // Valid move
                  } else {
                      System.out.println("pick a different spot"); // Invalid move
                  }
@@ -94,7 +94,7 @@ public static void startPlaying() {
              // checks if the game is a tie
              else if (tieCheck(grid)) {
                  printBoard(grid); // show final board
-                 System.out.println("oh noo its a tie");
+                 System.out.println("ooh no its a tie");
                  gameOver = true; // ends the game
              }
              // if there is no win or tie switch to the next
@@ -102,7 +102,7 @@ public static void startPlaying() {
                  whosTurn = 1 - whosTurn; //basically begins the other persons turn
              }
          }
-        input.close(); // closes the input ]
+        array.close(); // closes the input ]
         }
 // This is were the game begins
 public static void main(String[] args) {
