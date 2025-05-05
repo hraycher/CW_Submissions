@@ -76,7 +76,7 @@ public static void startPlaying() {
                  c = input.nextInt(); //gets the column number
                //checks if its actually a spot
                  if (r >= 0 && r < 3 && c >= 0 && c < 3) {
-                     validMove = true; // Valid move
+                     validMove = true; // move is valid
                  } else {
                      System.out.println("pick a different spot"); // Invalid move
                  }
@@ -94,7 +94,7 @@ public static void startPlaying() {
              // checks if the game is a tie
              else if (tieCheck(grid)) {
                  printBoard(grid); // show final board
-                 System.out.println("ooh no its a tie");
+                 System.out.println("oh noo its a tie");
                  gameOver = true; // ends the game
              }
              // if there is no win or tie switch to the next
