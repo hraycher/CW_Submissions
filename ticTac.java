@@ -2,15 +2,15 @@ import java.util.Scanner;
 public class tictactoe {
 	    // Prints the basically the tic tac board
 public static void printBoard(char[][] theBoard) {
-for (int i = 0; i < 3; i++) { // just row
-for (int j = 0; j < 3; j++) { //colum row
-         System.out.print(theBoard[i][j]); // Print the current cell's value 
-            if (j < 2) {
-               System.out.print(" | "); // adds the vertical colum for the board
+	for (int i = 0; i < 3; i++) { // just row
+		for (int j = 0; j < 3; j++) { //colum row
+			System.out.print(theBoard[i][j]); // Print the current cell's value \
+			if (j < 2) {
+				System.out.print(" | "); // adds the vertical colum for the board
 	                }
 	            }
-              System.out.println(); // Move to the next line after a row is printed
-          if (i < 2) {
+		System.out.println(); // Move to the next line after a row is printed
+		if (i < 2) {
 	                System.out.println("---------"); // Adds the horazontal colum for the board
 	            }
 	        }
@@ -38,8 +38,8 @@ public static boolean didWin(char [][] board, char whichPlayer) {
         // No win condition met
         return false;
 }
-//Checks if the board is full and there are no empty spots left
-public static boolean tieCheck(char[][] gameBoard) {
+//checks if the board is full and there are no empty spots left
+public static boolean tiecheck(char[][] gameBoard) {
 	 for (int i = 0; i < 3; i++) { // go through each row
 		 for (int j = 0; j < 3; j++) { // go through each column
 			    if (gameBoard[i][j] == ' ') {
@@ -92,7 +92,7 @@ public static void startPlaying() {
                  gameOver = true; // ends the game
              }
              // checks if the game is a tie
-             else if (tieCheck(grid)) {
+             else if (tiecheck(grid)) {
                  printBoard(grid); // show final board
                  System.out.println("ooh no its a tie");
                  gameOver = true; // ends the game
