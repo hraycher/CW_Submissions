@@ -47,7 +47,7 @@ public class inviciblemaze {
 	            }
 
             //ask the person where they would like to move
-            System.out.println("Move (up/down/left/right): ");
+            System.out.println("up,down,left,right");
             String move = bla.nextLine().toLowerCase(); // get the move input from the user
 
             // these will be the new positions
